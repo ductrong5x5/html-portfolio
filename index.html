@@ -6,66 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Custom styling for the content area */
+        .content-area {
+            margin-top: 80px; /* Adjust based on header height */
+        }
+    </style>
+    
 </head>
-<!-- <body>
-    <h1>Duc Trong Nguyen</h1>
-    <img src="./assets/images/face.jpg" height="250" draggable="true">
-    <h2>Summary</h2>
-    Enthusiastic senior student with expertise in software programming and computer security, seeking internship opportunities to apply and further develop my skills in a real-world setting.
-    <hr />
-    <h2> Education</h2>
-    <ul>
-        <li>Software Engineer Student</li>
-        <li>Bachelor of Science in Computer Science - University of Tennessee, Knoxville (Expected: August 2024)</li>
-        <li>Revelant course:
-            <ul>
-                <li>Data Structure Algorithm</li>
-                <li>Systems Programming</li>
-                <li>Operating Systems</li>
-                <li>Introduction to Artificial Intelligence</li>
-            </ul>
-        </li>
-        <li> GPA: 3.9</li>
-    </ul>
-    <hr />
-    <h2>Work Experience - Projects</h2>
-    <ul>
-        <li><h3>Watch Tower</h3></li>
-        Built a data collection system in Rust for user computer data, transmitted via a Python Flask backend to an SQL server. Crafted a user-friendly website using HTML, CSS, and PHP to showcase collected data. Also developed a Python desktop app for local access to computer information.
-        <li><h3>Real-Time Data Collection Website</h3></li>
-        Crafted a dynamic web app to gather and store real-time data with PHP, HTML, JavaScript, and MySQL. Leveraged PHP for secure server-side scripting and user input validation. Optimized the MySQL database schema for efficient data handling. Integrated JavaScript for dynamic client-side interactions, elevating user engagement
-        <li><h3>NBA prediction game </h3></li>
-        Developed a website utilizing API data to track real-time NBA game statistics, while employing AI models to forecast future game results. This fusion of live data and predictive analytics offers users a comprehensive platform for staying informed and making informed decisions
-        <li><h3>Voice assistant with AI and face regconization</h3></li>
-        Implemented a voice assistant using OpenCV in Python, integrated with Gemini-powered AI to recognize individuals and perform various tasks based on their identities. This innovative combination of technologies enables personalized interactions and efficient task management within the voice assistant system
-        <li><h3>Drone _ Tracking object</h3></li>
-        Creating a Python-powered drone equipped with OpenCV for precise real-time tracking of moving objects.
-    </ul>
-    <hr />
-    <h2>Skills</h2>
-    <ul>
-        <li><h3>Programming Languages: </h3></li>
-        Python, PHP, C++/C , Javascript, C#
-        <li><h3>Integrated Development Environments: </h3></li>
-        VS Code, PyCharm, Anaconda, Jupyterlab, Mathlab
-        <li><h3>Web Development: </h3></li>
-        HTML/CSS, React, Nodejs, Django, Flask
-        <li><h3>Database Management: </h3></li>
-        MySQL, Azure
-        <li><h3>Other</h3></li>
-        Docker, PyQT, Sublime Text, Git
-    </ul>
-    <hr />
-    <h2>Certifications</h2>
-    <ul>
-        <h3>Certificate of Web Development Udemy</h3>
-    </ul>
-    <hr />
-    <h2>Other</h2>
-    <ul>
-        <li> <a href="./public/contact.html">Contact Me</a> </li>
-    </ul>
-</body> -->
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
@@ -83,180 +31,364 @@
       </symbol>
     </svg>
 
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
-    </div>
 
     
 <header data-bs-theme="dark">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Carousel</a>
+      <a class="navbar-brand" href="#">About me</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link active" aria-current="page" href="https://www.linkedin.com/in/duc-nguyen-7a606028b/">LinkedIn</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+
       </div>
     </div>
   </nav>
 </header>
 
-<main>
-
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+<main class="content-area">
 
   <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
+    <div style="text-align: center;">
+        <img class="bd-placeholder-img rounded-circle" style="width: 20%; height: 20%; display: inline-block;" src="./assets/images/face.jpg" alt="About me">
+        <h2 class="fw-normal">My name is Duc Trong Nguyen!</h2>
+        <p>Enthusiastic recent-graduate student with expertise in Software Programming and Embedded Systems, seeking internship opportunities to apply and further develop my skills in a real-world setting.</p>
+    </div>
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./assets/images/utk-pic.jpg" alt="School">
+
+        <h2 class="fw-normal">Recent Graduate</h2>
+        <p>I Graduated at University of Tennessee in Knoxville, Tennessee in August 2024. My major is computer Science. My GPA is 3.92</p>
+        
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./assets/images/Project.jpg" alt="projects">
+        <h2 class="fw-normal">Projects</h2>
+        <p>They are about web dev, app dev, embedded, IoT, Robot, business solution</p>
+        <p><a class="btn btn-secondary" href="https://github.com/ductrong5x5">View details »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./assets/images/about-me.png" alt="About me">
+        <h2 class="fw-normal">More about me</h2>
+        <!-- <p></p> -->
         <p><a class="btn btn-secondary" href="#">View details »</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
 
-    <!-- START THE FEATURETTES -->
+    
+    <hr class="featurette-divider">
+    
+    <div class="row featurette">
+      <div class="col-auto">
+        <h2 class="featurette-heading fw-normal lh-1">Education... <span class="text-body-secondary">It takes me a long time!</span></h2>
+        <!-- <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p> -->
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">University of Tennessee in Knoxville</strong>
+              <h3 class="mb-0">Computer Science-Bachelor</h3>
+              <div class="mb-1 text-body-secondary">Graduate: August 2024</div>
+              <p class="card-text mb-auto">
+                GPA: 3.91
+                    
+                
+              </p>
+              <!-- <a href="Hello" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continue reading
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a> -->
+            </div>
+            <div class="col-auto d-none d-lg-block">
+             
+              <img class="bd-placeholder-img" width="200" height="200" src="./assets/images/logo-utk.jpg" alt="About me">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success-emphasis"> Pellissippi State Community College </strong>
+              <h3 class="mb-0">Computer Science-Associate</h3>
+              <div class="mb-1 text-body-secondary">August 2022</div>
+              <p class="card-text mb-auto">
+                GPA: 4.0
+                
+              </p>
+              <!-- <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">  
+                Continue reading
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a> -->
+            </div>
+            <div class="col-auto d-none d-lg-block">
+            
+                <img class="bd-placeholder-img" width="200" height="200" src="./assets/images/logo-pstcc.jpg" alt="About me">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis">University of Economics Ho Chi Minh City</strong>
+                <h3 class="mb-0">Marketing-Bachelor</h3>
+                <div class="mb-1 text-body-secondary">2016-2019</div>
+                <p class="card-text mb-auto">
+                    GPA: 3.6
+                      
+                  
+                </p>
+                <!-- <a href="Hello" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a> -->
+              </div>
+              <div class="col-auto d-none d-lg-block">
+             
+                <img class="bd-placeholder-img" width="200" height="200" src="./assets/images/logo-ueh.jpg" alt="About me">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success-emphasis"> Udemy online Course </strong>
+                <h3 class="mb-0">Online Bootcamps</h3>
+                
+                <p class="card-text mb-auto">
+                  <ul>
+                    <li>2024 Web Development Bootcamp</li>
+                    <li>Embedded Systems Bootcamp: RTOS, IoT, AI, Vision and FPGA</li>
+                    <li>Build IOT products using Arduino, NodeMCU,ESP8266, IOT Platforms, Sensors, Displays, Keypads,Relays, PCB's,Casing & more</li>
+                    <li>Selenium WebDriver with Java -Basics to Advanced+Frameworks</li>
+                </ul>
+                </p>
+                <!-- <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a> -->
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                 
+                  <img class="bd-placeholder-img" width="200" height="200" src="./assets/images/logo-udemy.jpg" alt="About me">
+                </div>
+            </div>
+          </div>
+    </div>
+    
+
 
     <hr class="featurette-divider">
 
     <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
+        <div class="col-12">
+            <h2 class="featurette-heading fw-normal lh-1">Work Experience  </h2>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis">MODA NAIL SPA</strong>
+                <h3 class="mb-0">Nail tech</h3>
+                <div class="mb-1 text-body-secondary">2023-2024</div>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img class="bd-placeholder-img" width="300"  height="200" src="./assets/images/logo-Moda.jpg" alt="About me">
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis">LUXURY NAIL BAR IN TURKEY CREEK</strong>
+                <h3 class="mb-0">Nail tech</h3>
+                <div class="mb-1 text-body-secondary">2021-2023</div>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img class="bd-placeholder-img" width="300" height="200" src="./assets/images/logo-luxury.jpg" alt="About me">
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis">NOIRE THE NAIL BAR</strong>
+                <h3 class="mb-0">Nail tech</h3>
+                <div class="mb-1 text-body-secondary">2020-2021</div>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img class="bd-placeholder-img" width="300" height="200" src="./assets/images/logo-noire.jpg" alt="About me">
+              </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-12">
+            <h2 class="featurette-heading fw-normal lh-1">Projects  </h2>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success-emphasis">Personal project </strong>
+                <h3 class="mb-0">Business solution - Interactive Card to Enhance Customer Reviews</h3>
+                <div class="mb-1 text-body-secondary">May 2024 – Present</div>
+                <p class="card-text mb-auto">
+                  <ul>
+                    <li>Interactive NFC Card: Developed using HTML/CSS, JavaScript, and Google Sheets API, leading to a 40%
+                        increase in positive customer reviews by enhancing customer interaction and feedback management. 
+                    </li>
+                    <li>Machine Learning Integration: Implemented algorithms to analyze feedback from NFC cards, improving
+                        response accuracy by 25% and providing actionable insights for 4 local businesses.                         
+                    </li>
+                  </ul>
+                  
+                </p>
+                <!-- <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">  
+                  More details
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a> -->
+              </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success-emphasis">Personal project </strong>
+                <h3 class="mb-0">AI and face recognizatiand using openCV and Python</h3>
+                <div class="mb-1 text-body-secondary">May 2024- August 2024</div>
+                <p class="card-text mb-auto">
+                    <ul>
+                        <li>AI and Face Recognition System: Developed using Python and OpenCV, achieving a 95% accuracy rate in
+                            identifying individuals. Enhanced security protocols for client operations, improving overall safety and
+                            operational efficiency.  
+                        </li>
+                        
+                      </ul>
+                  
+                </p>
+                <!-- <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">  
+                  More details
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a> -->
+              </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success-emphasis">Personal project </strong>
+                <h3 class="mb-0">Embedded - Robot Arm</h3>
+                <div class="mb-1 text-body-secondary">June 2024 - July 2024</div>
+                <p class="card-text mb-auto">
+                    <ul>
+                        <li>Robotic Arm Engineering: Designed and built using an Arduino board, servos, and connectors. Programmed
+                            in Python and C++, improvement in movement accuracy and task performance 
+                        </li>
+                      </ul>
+                  
+                </p>
+                <!-- <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">  
+                  More details
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a> -->
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success-emphasis">Group project in-school </strong>
+                <h3 class="mb-0">NBA prediction game</h3>
+                <div class="mb-1 text-body-secondary">January 2024 - April 2024</div>
+                <p class="card-text mb-auto">
+                    <ul>
+                        <li>NBA Game Statistics Website: Developed a website that tracks real-time NBA game statistics using API
+                            data.   
+                        </li>
+                        <li>Machine Learning Integration: Applied algorithms to historical NBA data, achieving 70% accuracy in game
+                            outcome predictions, significantly enhancing user engagement and platform reliability.   
+                        </li>
+                      </ul>
+                  
+                </p>
+                <!-- <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">  
+                  More details
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a> -->
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success-emphasis">Group project in-school </strong>
+                <h3 class="mb-0">Watch Tower</h3>
+                <div class="mb-1 text-body-secondary">January 2023 - April 2023</div>
+                <p class="card-text mb-auto">
+                    <ul>
+                        <li>Data Collection System: Developed in Rust to gather user computer data. Integrated with a Flask backend to
+                            transmit data to a scalable SQL server. 
+                        </li>
+                        <li>Website Development: Designed and implemented a user-friendly website using HTML, CSS, and PHP,
+                            showcasing collected data with a responsive, modern interface.                             
+                        </li>
+                        <li>Desktop Application: Built a local access application in Python for comprehensive computer information
+                            retrieval, focusing on ease of use and performance.   
+                        </li>
+                      </ul>
+                  
+                </p>
+                <!-- <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">  
+                  More details
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a> -->
+              </div>
+            </div>
+        </div>
+
+        
     </div>
 
     <hr class="featurette-divider">
 
     <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+      <div class="col-auto">
+        <h2 class="featurette-heading fw-normal lh-1">Skills</h2>
+        <p class="lead">
+            <ul>
+                
+                <li>Technical Skills:C++, C, JavaScript, Python, PHP, HTML/CSS, Bootstrap, React, Nodejs, MySQL, PostgreSQL,
+                    AzureSQL, Docker, PyQt, Git, Microsoft Office, Visual Studio Code, Jupyterlab, MATLAB, VHDL, Quartus Prime,
+                    FPGA, Arduino, ESP32 (Node MCU), MQTT, Node-red, Hivemq, RTOS, IoT, UART, Blynk, FPGA. </li> 
+                <li>Languages: English, Vietnamese.</li>
+                <li>Soft Skills: Marketing, Solid Written And Verbal Communication Skills, Ability To Adapt And Learn, Problemsolving.</li>
+            </ul>
+        </p>
       </div>
     </div>
 
@@ -264,13 +396,12 @@
 
     <!-- /END THE FEATURETTES -->
 
-  </div><!-- /.container -->
+  </div>
 
 
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>© 2017–2024 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
   </footer>
 </main>
 <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
