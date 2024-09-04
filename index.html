@@ -33,30 +33,51 @@
 
 
     
-<header data-bs-theme="dark">
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="https://github.com/ductrong5x5">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-  </nav>
-</header>
-
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./assets/images/Logo.png" alt="Brand Logo" style="height: 40px;">
+          </a>    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://github.com/ductrong5x5">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+              </li>
+              <li><button  onclick="shareContent()"><img src="./assets/images/share-logo.png" alt="Brand Logo" style="height: 15px;"></button></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    
 <main class="content-area">
-
+  
+  <script>
+    function shareContent() {
+        if (navigator.share) {
+            navigator.share({
+                title: 'Check out this page!',
+                text: 'I found this interesting page and wanted to share it with you.',
+                url: window.location.href
+            }).then(() => {
+                console.log('Thanks for sharing!');
+            }).catch((error) => {
+                console.log('Error sharing:', error);
+            });
+        } else {
+            alert('Web Share API is not supported in your browser.');
+        }
+    }
+  </script>
+  
   <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
@@ -65,8 +86,39 @@
         <h2 class="fw-normal">My name is Duc Trong Nguyen!</h2>
         <p></p>
     </div> -->
-   
 
+
+
+    
+    <div class="row mb-2">
+        <div class="col-md-auto">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col-auto d-none d-lg-block">
+            
+              <img class="bd-placeholder-img" width="200" height="100%" src="./assets/images/face.jpg" alt="About me">
+            </div>
+            <!-- <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">University of Tennessee in Knoxville</strong>
+              <h3 class="mb-0">Computer Science-Bachelor</h3>
+              <div class="mb-1 text-body-secondary">Graduate: August 2024</div>
+              <p class="card-text mb-auto">
+                GPA: 3.91
+                    
+                
+              </p>
+              
+            </div> -->
+            
+          </div>
+        </div>
+    
+      <div class="col-6">
+        <h2 class="featurette-heading fw-normal lh-1">Hi there! <span class="text-body-secondary">My name is Duc Trong Nguyen</span></h2>
+        <p class="lead">I'm a recent graduate with a major in Computer Science. I have a strong foundation in both hardware and software, with hands-on experience in 
+          embedded systems, IoT, and software developing. My diverse background, including marketing studies, allows me to approach problems with both technical precision 
+          and strategic insight. I'm excited to apply my skills in a software engineering role and contribute to innovative tech solutions.          
+        </p>
+      </div>
 
     
     <hr class="featurette-divider">
